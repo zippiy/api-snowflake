@@ -4,7 +4,7 @@ snowsql -a $account -u $user -d $db -s public
 
 2. 
 put file://C:\temp\set*.txt @~/staged/set;
-list @~/staged
+list @~/staged;
 COPY INTO Products FROM '@~/staged/' file_format = (format_name = csv1)   pattern='.*txt.gz'
 COPY INTO Seller2Keyword FROM '@~/staged/set' file_format = (format_name = csv1)   pattern='.*txt.gz'
 
