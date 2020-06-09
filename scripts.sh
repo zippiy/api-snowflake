@@ -10,8 +10,8 @@ put file://C:\temp\set*.txt @~/staged/set;
 put file://./c*.txt @~/staged/set;
 
 list @~/staged;
-COPY INTO Products FROM '@~/staged/' file_format = (format_name = csv1)   pattern='.*txt.gz'
-COPY INTO Seller2Keyword FROM '@~/staged/set' file_format = (format_name = csv1)   pattern='.*txt.gz'
+COPY INTO Products FROM '@~/staged/' file_format = (format_name = csv1)   pattern='.*txt.gz';
+COPY INTO Seller2Keyword FROM '@~/staged/set' file_format = (format_name = csv1)   pattern='.*txt.gz';
 
 
 3.
