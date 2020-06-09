@@ -1,6 +1,9 @@
 1.
-## Account
+## Account - Unix style
 snowsql -a $account -u $user -d $db -s public
+## Account - Windows style
+set SNOWSQL_PWD=
+snowsql -a %account% -u %user% -d %db% -s public
 
 2. 
 put file://C:\temp\set*.txt @~/staged/set;
